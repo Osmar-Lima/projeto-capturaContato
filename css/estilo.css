@@ -84,7 +84,7 @@ select {
     background-image: url(/imagens/arrow.jpg);
     background-repeat: no-repeat;
     /* background-position: right;  desta forma a seta fica colada do lado direito*/
-    background-position: calc(100% - 10px) center;
+    background-position: calc(100% - 10px);
     /* com esse codigo conseguimos dar um espaço*/
 }
 
@@ -99,27 +99,30 @@ footer p {
 }
 
 .picture {
-    width: 200px;
-    height: 400px;
+    width: 160px;
 }
 
 .description {
-    display: inline-block;
-    text-align: left;
     color: white;
+    display: inline-block;
     max-width: 40%;
-    margin-left: 40px;
+    margin-left: -300px;
+    text-align: left;
 }
 
+/* .description h3{
+    margin: 20px;
+} */
+img {
+    display: block;
+    float: left;
+    margin: auto;
+    padding: 10px;
+}
 
 .description p, .description h3 {
     margin-bottom: 20px;
 }
-
-.description h3{
-    font-size: 24px;
-}
-
 
 @media screen and (max-width:900px) {
     .formContainer {
@@ -139,6 +142,103 @@ footer p {
     input, select {
         margin-bottom: 15px;
     }
-   
+    .description {
+        display: block;
+        max-width: 100%;
+        margin-left: 5px;
+        margin-left: -300px;
+        text-align: left;
+    }
+    .description h3{
+        font-size: 20px;
+
+    }
+
+    .picture {
+        width: 160px;
+        padding-bottom: 5px;
+        margin-top: 5px;
+    }
 }
 
+@media screen and (max-width:414px) {
+    .title {
+        font-size: 20px;
+    }
+    .formContainer {
+        width: 400px;
+        margin: auto;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .picture {
+        width: 160px;
+        padding-bottom: 5px;
+        margin-top: 5px;
+    }
+    .description {
+        display: block;
+        max-width: 100%;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .title {
+        font-size: 18px;
+    }
+    .formContainer {
+        width: 500px;
+        margin: auto;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .picture {
+        width: 160px;
+        padding-bottom: 5px;
+        margin-top: 15px;
+    }
+    .description {
+        display: block;
+        max-width: 100%;
+        margin-left: 5px;
+    }
+    .description h3{
+        font-weight: bold;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:375) {
+    .title {
+        font-size: 18px;
+    }
+    .formContainer {
+        width: 300px;
+        margin: auto;
+ 
+    }
+
+    .picture {
+        width: 250px;
+        margin: auto;
+    }
+    .description {
+        display: inline-block;
+        margin-left: 5px;
+    }
+    .description h3{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:320) {
+    .picture {
+        width: 400px;
+        margin: auto;
+    }
+}

@@ -141,3 +141,69 @@ footer p {
    
 }
 
+@media screen and (min-width:400px) and (max-width:900px){
+    .formContainer {
+        max-width: 100%;
+        /* min-width: 400px; */
+        margin: auto;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .picture {
+        width: 160px;
+        padding-bottom: 5px;
+        margin-top: 5px;
+    }
+    .description {
+        display: inline;
+        max-width: 100%;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width:320px){
+    .title {
+        font-size: 16px;
+    }
+    .formContainer {
+        width: 300px;
+        margin: auto;
+ 
+    }
+    input, select{
+        padding: 7px;
+        margin: 5px;
+
+    }
+
+    .formContainer h2{
+        font-size: 14px;
+    }
+
+    .formContainer p{
+        font-size: 12px;
+    }
+
+    .picture {
+        width: 100px;
+        float: left;
+        margin-right: 7px;
+        margin-top: 7px;
+    }
+
+    .description{
+        display: inline;
+        
+    }
+
+    .description p{
+        text-align: justify;
+        font-size: 12px;
+    }
+    .description h3{
+        font-size: 15px;
+    
+    }
+}
+
+

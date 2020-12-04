@@ -26,3 +26,59 @@ header{
     max-width: 1000px;
     margin: auto;
 }
+
+
+section{
+   padding: 20px;
+   background-image: url(/imagens/people.jpg);
+   background-size: cover; /*deixa a nossa imagem do tamanho da section*/
+   overflow: hidden; /* faz com que a nossa imagem preencha todo a campo da section*/
+}
+
+.formContainer{
+    max-width: 230px;
+    background-color: #ffffffbb;
+    padding: 20px;
+    float:right;
+}
+h2{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.mg-bottom{
+    margin-bottom: 15px;
+}
+
+input, select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+    outline-color: #48c5ce;
+}
+
+
+
+input[type="submit"]{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    background-color: #48c5ce;
+    
+}
+.submit:hover{
+    cursor: pointer;
+}
+
+/* configurando nossa seta no select, as 3 linhas iniciais é pra desabilitar a seta padrao dos navegadores, e as linhas se que repetem é pra incluir nossa seta de forma manual */
+select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(/imagens/arrow.jpg);
+    background-repeat: no-repeat;
+    /* background-position: right;  desta forma a seta fica colada do lado direito*/
+    background-position: calc(100% - 10px); /* com esse codigo conseguimos dar um espaço*/
+}
